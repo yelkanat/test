@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
 const Clients = (props) => {
   const [isCreating, setCreating] = useState(false);
 
-  const [state, setState] = React.useState({
+  const [state] = React.useState({
     columns: [
       { title: "Наименование компании", field: "name" },
       { title: "Тип юр.лица", field: "registered_type" },

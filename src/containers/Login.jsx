@@ -2,7 +2,6 @@ import React from "react";
 import { Formik, Form, Field } from "formik";
 import { TextField } from "formik-material-ui";
 import { connect } from "react-redux";
-// import * as yup from 'yup';
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
@@ -25,11 +24,6 @@ const useStyles = makeStyles({
     justifyContent: "center",
   },
 });
-
-// const validationSchema = yup.object().shape({
-//   email: yup.email().required('Введите почту'),
-//   password: yup.string().required('Введите пароль'),
-// });
 
 const Login = ({ onLoginUser }) => {
   const classes = useStyles();

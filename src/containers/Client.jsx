@@ -3,23 +3,11 @@ import { connect } from "react-redux";
 import { Formik, Field, Form } from "formik";
 import Button from "@material-ui/core/Button";
 import Container from "@material-ui/core/Container";
-import { TextField, Paper, Typography } from "@material-ui/core";
+import { TextField, Paper } from "@material-ui/core";
 import { Switch as MuiSwicth } from "@material-ui/core";
 import { useParams } from "react-router";
 import { readClient, updateClient } from "../store/actions/clients";
 import { makeStyles } from "@material-ui/core/styles";
-
-// import * as yup from 'yup';
-
-// const validationSchema = yup.object().shape({
-//   fullname: yup.string().required(),
-//   address: yup.string(),
-//   birthday: yup.date().required(),
-//   gender: yup.string(),
-//   phone: yup.string(),
-//   height: yup.string(),
-//   weight: yup.string(),
-// });
 
 const useStyles = makeStyles((theme) => ({
   container: {

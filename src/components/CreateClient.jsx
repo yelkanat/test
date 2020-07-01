@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Formik, Form } from "formik";
-// import * as yup from "yup";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 import Dialog from "@material-ui/core/Dialog";
@@ -9,12 +8,6 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import { createNewClient } from "../store/actions/clients";
-
-// const validationSchema = yup.object().shape({
-//   stage: yup.number().required(),
-//   procedureArea: yup.string().required("Введите название области"),
-//   procedureName: yup.string().required("Введите название процедуры"),
-// });
 
 const CreateClient = ({ open, handleClose, addClient }) => {
   const handleSubmit = (data) => {
